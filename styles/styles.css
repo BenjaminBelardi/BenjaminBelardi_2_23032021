@@ -86,6 +86,7 @@ nav a:hover
     width: 400px;
     border:1px #DEEBFF solid;
     border-radius: 15px;
+    margin-bottom: 40px;
 }
 .span-map-icon
 {
@@ -111,6 +112,8 @@ nav a:hover
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
+/* icon round decoration */
 .filter i.fa
 {
     padding: 20px;
@@ -118,4 +121,30 @@ nav a:hover
     color: #0065FC;
     border: none;
     background-color: #DEEBFF;
+}
+
+/* checkbox mask with icon */
+input[name="type-hebergement"] 
+{
+    position: absolute;
+    left: -9999px;
+}
+
+.filter-option 
+{
+    display: flex;
+    width:200px;
+    align-items:center;
+    border: 2px #f2f2f2 solid;
+    border-radius: 30px;
+}
+/* color label filter-opption when the used click on the label zone */
+input[name="type-hebergement"]:checked + label.filter-option 
+{
+    background-color: #deebff;
+    box-shadow: inset;
+}
+.filter-option-label
+{
+    padding: 20px;
 }
