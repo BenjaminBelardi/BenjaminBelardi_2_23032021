@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+.accommodation-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 2rem;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+.vignette-acc
+{
+    display: flex;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 0 16px #00002e;
+    height: 100%;
+    max-width: 300px;
+    margin-right: 2.2rem;
+    margin-top: 2.2rem;
+}
+.vignette-acc a
+{
+    text-decoration: none;
+}
+.vignette-acc a img
+{
+    padding: 0.3rem;
+    max-height: 115px;
+    width: 100%;
+    object-fit:cover;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+.vignette-texte
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: black;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+
+}
+.vignette-texte p
+{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.vignette-tittle
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.vignette-price
+{
+    font-size: 1rem;
+}
+.price-bold
+{
+    font-weight: bold;
+}
+.star-icon i.fa
+{
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+    color:#0065FC;
+}

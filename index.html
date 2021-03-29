@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/style-vignette.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!--<script src="https://kit.fontawesome.com/7d732b568c.js" crossorigin="anonymous"></script>-->
     <title>Reservia</title>
@@ -16,7 +17,7 @@
             <div id="logo">
                 <a href="index.html"><img src="/images/logo/Reservia.svg" alt="Reservia"></a>
             </div>
-             <!--navigation bare-->
+            <!--navigation bare-->
             <nav>
                 <ul>
                     <li><a href='hebergements'>Hébergements</a></li>
@@ -28,45 +29,155 @@
         <!--filter and shearch section-->
         <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
         <h2>En plein centre ou en pleine nature</h2>
-        <section>
             <div class="search">
-                <span class="span-map-icon">
+                <span class="search-map-icon">
                     <i class="fa fa-map-marker-alt"></i>
                 </span>
                 <input type="search" id="search-area" name="search" placeholder="Marseille, France">
-                <button type="submit" id="search-button">Rechercher</button>
+                <button type="submit" id="search-button">
+                    <span class="search-texte">Rechercher</span>
+                    <span class="search-icon">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </button>   
+                </div>
             </div>
-            <!-- faire des bouttons type chexbox"-->
+
+            <!-- checkbox button for filter choise"-->
             <div class="filter">
-                <input type="checkbox" name="type-hebergement" id="eco">
-                <label for="eco" class="filter-option">
-                    <span class="span-filter-icon">
-                        <i class="fa fa-money-bill-wave-alt"></i>
-                    </span>
-                    <span class="filter-option-label">Economique</span>
-                </label> 
-
-                <input type="checkbox" name="type-hebergement" id="romantique">
-                <label for="romantique" class="filter-option">
-                    <span  class="filter-option-icon">
-                        <i class="fa fa-money-bill-wave-alt"></i>
-                    </span>
-                    <span class="filter-option-label">Romantique</span>
-                </label>
-
-                </label>
-
-
+                <span id="filter-zone-title">Filtres</span>
+                <div class="filter-option-container">
+                    <input type="checkbox" name="type-hebergement" id="eco">
+                    <label for="eco" class="filter-option">
+                        <span class="filter-option-icon">
+                            <i class="fa fa-money-bill-wave-alt"></i>
+                        </span>
+                        <span class="filter-option-label">Economique</span>
+                    </label>
+                    <input type="checkbox" name="type-hebergement" id="famillial">
+                    <label for="famillial" class="filter-option">
+                        <span  class="filter-option-icon">
+                            <i class="fa fa-child"></i>
+                        </span>
+                        <span class="filter-option-label">Familial</span>
+                    </label>
+                    <input type="checkbox" name="type-hebergement" id="romantique">
+                    <label for="romantique" class="filter-option">
+                        <span  class="filter-option-icon">
+                            <i class="fa fa-heart"></i>
+                        </span>
+                        <span class="filter-option-label">Romantique</span>
+                    </label>
+                    <input type="checkbox" name="type-hebergement" id="animaux">
+                    <label for="animaux" class="filter-option">
+                        <span  class="filter-option-icon">
+                            <i class="fa fa-dog"></i>
+                        </span>
+                        <span class="filter-option-label">Animaux autorisés</span>
+                    </label>
+                </div>
             </div>
-
-
-        </section>
         <!--acoomodation section-->
         <section>
-            <!--accomation vignette-->
-            <div>
-
-
+            <h1>Hébergement à Marseille</h1>
+            <!--accommodation vignette-->
+            <div class="accommodation-container">
+                    <div class="vignette-acc">
+                            <a href="#" tittle="page Auberge de la Cannebière">
+                                <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere">
+                                <div class="vignette-texte">
+                                    <p class="vignette-tittle">Auberge la Cannebière</p>
+                                    <p class="vignette-price">Nuit à partir de <span class="price-bold">25&euro;</span></p>
+                                    <span  class="star-icon">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </a>              
+                    </div>
+                    <div class="vignette-acc">
+                        <a href="#" tittle="page Auberge de la Cannebière">
+                            <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere">
+                            <div class="vignette-texte">
+                                <p class="vignette-tittle">Auberge la Cannebière</p>
+                                <p class="vignette-price">Nuit à partir de <span class="price-bold">25&euro;</span></p>
+                                <span  class="star-icon">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                        </a>              
+                    </div>
+                    <div class="vignette-acc">
+                        <a href="#" tittle="page Auberge de la Cannebière">
+                            <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere">
+                            <div class="vignette-texte">
+                                <p class="vignette-tittle">Auberge la Cannebière</p>
+                             <p class="vignette-price">Nuit à partir de <span class="price-bold">25&euro;</span></p>
+                                <span  class="star-icon">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                        </a>              
+                    </div>
+                    <div class="vignette-acc">
+                        <a href="#" tittle="page Auberge de la Cannebière">
+                            <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere">
+                            <div class="vignette-texte">
+                                <p class="vignette-tittle">Auberge la Cannebière</p>
+                             <p class="vignette-price">Nuit à partir de <span class="price-bold">25&euro;</span></p>
+                                <span  class="star-icon">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                        </a>              
+                    </div>
+                    <div class="vignette-acc">
+                        <a href="#" tittle="page Auberge de la Cannebière">
+                            <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere">
+                            <div class="vignette-texte">
+                                <p class="vignette-tittle">Auberge la Cannebière</p>
+                             <p class="vignette-price">Nuit à partir de <span class="price-bold">25&euro;</span></p>
+                                <span  class="star-icon">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                        </a>              
+                    </div>
+                    <div class="vignette-acc">
+                        <a href="#" tittle="page Auberge de la Cannebière">
+                            <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiere">
+                            <div class="vignette-texte">
+                                <p class="vignette-tittle">Auberge la Cannebière</p>
+                             <p class="vignette-price">Nuit à partir de <span class="price-bold">25&euro;</span></p>
+                                <span  class="star-icon">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </span>
+                            </div>
+                        </a>              
+                    </div>
             </div>
             <!-- popular vignette-->
             <div>
