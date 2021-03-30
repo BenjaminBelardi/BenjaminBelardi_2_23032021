@@ -1,25 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
 
+.accommodation
+{
+    width: 880px;
+    /*max-width:880px;*/
+    height: auto;
+    background-color: #f2f2f2;
+    border-radius: 2rem;
+    padding: 40px 46px;
+}
 .accommodation-container
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    border-radius: 2rem;
-    align-items: center;
-    background-color: #f2f2f2;
+    justify-content: space-between;
 }
 .vignette-acc
 {
-    display: flex;
     background-color: white;
     border-radius: 2rem;
-    box-shadow: 0 0 16px #00002e;
-    height: 100%;
-    max-width: 300px;
-    margin-right: 2.2rem;
+    box-shadow: 0 0 16px #dedede;
+    height: 200px;
+    width: 250px;
+    max-width: 250px;
     margin-top: 2.2rem;
+    margin-bottom: 0.3rem;
+    padding:0.4rem;
+
 }
 .vignette-acc a
 {
@@ -27,36 +35,35 @@
 }
 .vignette-acc a img
 {
-    padding: 0.3rem;
     max-height: 115px;
     width: 100%;
     object-fit:cover;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    border-top-left-radius: 1.8rem;
+    border-top-right-radius: 1.8rem;
 }
-.vignette-texte
+.vignette-acc .vignette-texte
 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     color: black;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     margin-bottom: 1rem;
 
 }
 .vignette-texte p
 {
     margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+    /*margin-bottom: 0.2rem;*/
 }
 .vignette-tittle
 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 .vignette-price
 {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .price-bold
 {
@@ -65,6 +72,63 @@
 .star-icon i.fa
 {
     margin-top: 0.2rem;
+    font-size: 1rem;
+    color:#0065FC;
+}
+.vignette-more
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-end;
+}
+.popular-vignette-container
+{
+    display: flex;
+    flex-direction:column;
+    background-color: #f2f2f2;
+    border-radius: 2rem;
+    padding: 40px 46px;
+
+}
+.vignette-popular
+{
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 16p #dedede;
+    height: 145px;
+    width: 345px;
+    /*max-width: 345px;*/
+    margin-top: 2.2rem;
+
+}
+.vignette-popular a
+{
+    display: flex;
+    text-decoration: none;
+    padding: 0.4rem;
+}
+.vignette-popular img
+{
+    width: 127px;
+    height: 134px;
+    max-height: 134px;
+    object-fit:cover;
+    border-top-left-radius: 1.3rem;
+    border-bottom-left-radius: 1.3rem;
+}
+
+.vignette-popular .vignette-texte
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: black;
+    margin-left: 1rem;
+}
+.vignette-popular .star-icon i.fa
+{
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
     font-size: 1.2rem;
     color:#0065FC;
 }
