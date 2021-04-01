@@ -2,8 +2,11 @@
 
 .accommodation
 {
-    width: 880px;
-    /*max-width:880px;*/
+    /*width: 880px;*/
+    max-width:880px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: auto;
     background-color: #f2f2f2;
     border-radius: 2rem;
@@ -22,9 +25,10 @@
     border-radius: 2rem;
     box-shadow: 0 0 16px #dedede;
     height: 200px;
-    width: 250px;
-    max-width: 250px;
-    margin-top: 2.2rem;
+    /*width: 250px;*/
+    max-width:30%;
+    min-width: 20%;
+    margin-top: 35px;
     margin-bottom: 0.3rem;
     padding:0.4rem;
 
@@ -56,7 +60,7 @@
     margin-top: 0.2rem;
     /*margin-bottom: 0.2rem;*/
 }
-.vignette-tittle
+.vignette-title
 {
     font-size: 1rem;
     font-weight: 600;
@@ -80,6 +84,12 @@
     display: flex;
     justify-content: flex-start;
     align-items:flex-end;
+    margin-top: 2rem;
+}
+.vignette-more h2
+{
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 .popular-vignette-container
 {
@@ -90,27 +100,36 @@
     padding: 40px 46px;
 
 }
+.popular-vignette-container h1
+{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.popular-vignette-container h1 i.fa
+{
+    
+    color: black;
+}
 .vignette-popular
 {
     background-color: white;
     border-radius: 1.5rem;
     box-shadow: 0 0 16p #dedede;
-    height: 145px;
-    width: 345px;
-    /*max-width: 345px;*/
+    max-height: 145px;
+    max-width: 345px;
     margin-top: 2.2rem;
+    padding: 0.4rem;
 
 }
 .vignette-popular a
 {
     display: flex;
     text-decoration: none;
-    padding: 0.4rem;
 }
-.vignette-popular img
+.vignette-popular a img
 {
-    width: 127px;
-    height: 134px;
+    display: flex;
+    max-width: 40%;
     max-height: 134px;
     object-fit:cover;
     border-top-left-radius: 1.3rem;
@@ -121,7 +140,7 @@
 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     color: black;
     margin-left: 1rem;
 }
@@ -129,6 +148,186 @@
 {
     margin-top: 2rem;
     margin-bottom: 0.8rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color:#0065FC;
+}
+
+/*  ACTIVITIES SECTIONS */
+
+.activities-section
+{
+    display: flex;
+    flex-direction: column;
+    margin : 1rem;
+}
+.activities-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.activities.single
+{
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 16px #dedede;
+    max-width:300px;
+    min-width: 280px;
+    max-height: 30em;
+}
+.activities.double
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2rem;
+    max-width:300px;
+    min-width: 280px;
+    max-height: 30em;
+}
+.activities.pomegue
+{
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 0 16px #dedede;
+    max-width:300px;
+    min-width: 280px;
+    max-height: 57%;
+
+}
+.activities.frioul
+{
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 0 16px #dedede;
+    max-width:300px;
+    min-width: 280px;
+    max-height: 37%;
+
+}
+.activities.garde
+{
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 0 16px #dedede;
+    max-width:300px;
+    min-width: 280px;
+    max-height: 43%;
+
+}
+.activities.longchamp
+{
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 0 16px #dedede;
+    max-width:300px;
+    min-width: 280px;
+    max-height: 47%;
+
+}
+
+.activities a
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.activities.frioul a img
+{
+    display: flex;
+    height: 66%;
+    border-radius: 1.8rem 1.8rem 0 0;
+    object-fit: cover;
+}
+.activities.pomegue a img
+{
+    display: flex;
+    width: 100%;
+    height: 75%;
+    border-radius: 1.8rem 1.8rem 0 0;
+    object-fit: cover;
+}
+.activities.garde a img
+{
+    display: flex;
+    width: 100%;
+    height: 75%;
+    border-radius: 1.8rem 1.8rem 0 0;
+    object-fit: cover;
+}
+.activities.longchamp a img
+{
+    display: flex;
+    width: 100%;
+    height: 75%;
+    border-radius: 1.8rem 1.8rem 0 0;
+    object-fit: cover;
+}
+.activities.single a img
+{
+    display: flex;
+    width: 100%;
+    height: 87%;
+    border-radius: 1.8rem 1.8rem 0 0;
+    object-fit: cover;
+}
+.activities-texte .activities-title
+{
+    margin-left: 1rem;
+    color: black;
+    font-weight: bold;
+}
+.activities.single:hover, .activities.pomegue:hover, .activities.frioul:hover, .activities.garde:hover, .activities.longchamp:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 2rem #0065FC;
+
+}
+@media screen and (max-width: 768px )
+{
+        .activities
+    {
+        margin-bottom: 2rem;
+    }
+}
+
+/*RESPONSIVE - SMARTPHONE */
+@media screen and (max-width: 450px )
+{
+    .activities-container
+    {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .activities a img
+    {
+        height: 66%;
+    } 
+    .activities.single
+    {
+        height: 8em;
+    }
+    .activities.double
+    {
+        height: 16em;
+    }
+    .activities.pomegue
+    {
+        height: 50%;
+    }
+    .activities.frioul
+    {
+        height: 50%;
+    }
+
 }
