@@ -85,7 +85,6 @@
 .vignette-acc:hover
 {
     transform: scale(1.05);
-    box-shadow: 0 0 2rem #0065FC;
 }
 .vignette-acc:active
 {
@@ -173,20 +172,45 @@ i.fa-star.not-activated
 .activities-container
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    height: 600px;
 }
-.activities.single
+.activities
 {
     display: flex;
     border-radius: 2rem;
     box-shadow: 0 0 16px #dedede;
-    max-width:20%;
-    min-width: 280px;
-    max-height: 30em;
+    width:300px;
+    /*min-width: 280px;*/
+    /*max-height: 30em;*/
+    /*height: 100%;*/
 }
-.activities.double
+.activities.port, .activities.calanque
+{
+    height: 450px;
+}
+.activities.pomegue
+{
+    height: 240px;
+
+}
+.activities.garde
+{
+    height: 200px;
+    margin-top: 44px;
+}
+.activities.frioul
+{
+    height: 165px;
+    margin-top: 44px;
+}
+.activities.longchamp
+{
+    height:210px;
+}
+
+/*.activities.double
 {
     display: flex;
     flex-direction: column;
@@ -195,8 +219,8 @@ i.fa-star.not-activated
     max-width:20%;
     min-width: 280px;
     max-height: 30em;
-}
-.activities.pomegue, .activities.frioul, .activities.garde, .activities.longchamp
+}*/
+/*.activities.pomegue, .activities.frioul, .activities.garde, .activities.longchamp
 {
     display: flex;
     flex-direction:column;
@@ -205,21 +229,25 @@ i.fa-star.not-activated
     box-shadow: 0 0 16px #dedede;
     max-width:20%;
     min-width: 280px;
-    max-height: 57%;
 
+}*/
+/*
+.activities.pomegue
+{
+    height: 57%;
 }
 .activities.frioul
 {
-    max-height: 37%;
+    height: 37%;
 }
 .activities.garde
 {
-    max-height: 43%;
+    height: 43%;
 }
 .activities.longchamp
 {
-    max-height: 47%;
-}
+    height: 47%;
+}*/
 
 .activities a
 {
@@ -230,7 +258,7 @@ i.fa-star.not-activated
 }
 .activities.frioul a img, .activities.pomegue a img,
 .activities.garde a img, .activities.longchamp a img,
-.activities.single a img
+.activities.port a img, .activities.calanque a img
 {
     display: flex;
     width: 100%;
@@ -253,7 +281,7 @@ i.fa-star.not-activated
 {
     height: 72%;
 }
-.activities.single a img
+.activities.port a img, .activities.calanque a img
 {
     height: 87%;
 }
@@ -266,7 +294,6 @@ i.fa-star.not-activated
 .activities.single:hover, .activities.pomegue:hover, .activities.frioul:hover, .activities.garde:hover, .activities.longchamp:hover
 {
     transform: scale(1.05);
-    box-shadow: 0 0 2rem #0065FC;
 
 }
 /*RESPONSIVE - tablette */
@@ -279,7 +306,6 @@ i.fa-star.not-activated
         width:100%;
         justify-content: space-around;
         align-items: center;
-        border-radius: 0;
         padding: 2em;
         margin-bottom: 2em;
     }
@@ -311,7 +337,6 @@ i.fa-star.not-activated
     {
         order:1;
         max-width: 100%;
-        border-radius: 0;
         padding: 1em 1em 2em;
         margin-bottom: 3em;
         margin-bottom: 1em;
