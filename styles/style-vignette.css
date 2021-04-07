@@ -17,19 +17,24 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: -20px;
+
 }
 .vignette-acc
 {
     display: flex;
-    max-width: 15em;
-    min-width: 13em;
+    /*max-width: 15em;*/
+    flex-basis: 28%;
+    flex-grow: 1;
+    /*min-width: 13em;*/
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 0 16px #dedede;
     max-height: 12em;
-    margin-top: 35px;
-    margin-bottom: 0.3rem;
+    /*margin-top: 35px;
+    margin-bottom: 0.3rem;*/
+    margin: 20px;
     padding:0.2rem;
 
 }
@@ -56,7 +61,7 @@
 }
 .vignette-texte p
 {
-    margin: 2%;
+    margin: 0.2rem;
 }
 .vignette-title
 {
@@ -107,6 +112,7 @@
 {
     display: inline-flex;
     justify-content: space-between;
+    margin-bottom: -1rem;
 }
 .popular-vignette-container h1 i.fa
 {
@@ -118,7 +124,7 @@
     background-color: white;
     border-radius: 1.5rem;
     box-shadow: 0 0 16px #dedede;
-    max-height: 145px;
+    max-height: 140px;
     /*max-width: 345px;*/
     width: 100%;
     max-width: 100%;
@@ -160,6 +166,10 @@ i.fa-star.not-activated
 {
     color:#f2f2f2;
 }
+.vignette-popular:hover
+{
+   transform:scale(1.05);
+}
 
 /*  ACTIVITIES SECTIONS */
 
@@ -167,21 +177,26 @@ i.fa-star.not-activated
 {
     display: flex;
     flex-direction: column;
-    margin : 1rem;
+    margin-top : 3rem;
 }
 .activities-container
 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 600px;
+    max-width: 100%;
+    height: 490px;
+    margin: -20px 0 -20px 0;
+    align-content: space-between;
 }
 .activities
 {
     display: flex;
     border-radius: 2rem;
     box-shadow: 0 0 16px #dedede;
-    width:300px;
+    max-width: 300px;
+    margin: 20px 0 20px 0;
+    /*flex-shrink: 1;*/
     /*min-width: 280px;*/
     /*max-height: 30em;*/
     /*height: 100%;*/
@@ -198,12 +213,12 @@ i.fa-star.not-activated
 .activities.garde
 {
     height: 200px;
-    margin-top: 44px;
+    
 }
 .activities.frioul
 {
     height: 165px;
-    margin-top: 44px;
+    
 }
 .activities.longchamp
 {
@@ -253,7 +268,8 @@ i.fa-star.not-activated
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    width: 100%;
     height: 100%;
 }
 .activities.frioul a img, .activities.pomegue a img,
@@ -287,25 +303,63 @@ i.fa-star.not-activated
 }
 .activities-texte .activities-title
 {
+    display: flex;
+    height: 100%;
+    align-items: center;
     margin-left: 1rem;
     color: black;
     font-weight: bold;
 }
-.activities.single:hover, .activities.pomegue:hover, .activities.frioul:hover, .activities.garde:hover, .activities.longchamp:hover
+.activities:hover
 {
     transform: scale(1.05);
 
 }
 /*RESPONSIVE - tablette */
+@media screen and (max-width: 1300px )
+{
+    
+    .activities-container
+    {
+        flex-direction: row ;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-between;
+    }
+    .activities.port, .activities.calanque, .activities.pomegue,
+    .activities.longchamp, .activities.frioul, .activities.garde
+    {
+        height: 250px;
+        flex-basis: 47%;
+    }
+    .activities.frioul a img, .activities.pomegue a img,
+    .activities.garde a img, .activities.longchamp a img,
+    .activities.port a img, .activities.calanque a img
+    {
+        height: 70%;
+    }
 @media screen and (max-width: 1200px )
 {
+    .accommodation
+    {
+        order:2;
+        width: 100%;
+        max-width: 100%;
+
+    }
+    .vignette-acc
+    {
+        flex-basis: 28%;
+        flex-grow: 1;
+    }
+
     .popular-vignette-container
     {
         order:1;
         max-width: 100%;
         width:100%;
         justify-content: space-around;
-        align-items: center;
+        /*align-items: center;*/
         padding: 2em;
         margin-bottom: 2em;
     }
@@ -315,23 +369,15 @@ i.fa-star.not-activated
     }
     /*.vignette-popular
     {
-        max-width: 15em;
+        flex-basis: 33.33;
     }*/
     .popular-tittle
     {
         display: flex;
     }
-    .accommodation
-    {
-        order:2;
-        width: 100%;
-        max-width: 100%;
-
-    }
 }
-
 /*RESPONSIVE - SMARTPHONE */
-@media screen and (max-width: 450px )
+@media screen and  (max-width: 660px )
 {   
     .popular-vignette-container
     {
@@ -347,22 +393,30 @@ i.fa-star.not-activated
         width: 100%;
         max-width: 100%;
     }
+    #popular-title
+    {
+        margin-top: 1rem !important;
+        margin-bottom: 2rem;
+    }
     .accommodation
     {
         order: 2;
         max-width: 100%;
         width:100%;
         background-color: unset;
-        padding: 1em;
+        padding: 1rem;
 
     }
     
     .vignette-acc
     {
-        width: 100%;
-        max-width: 100%;
-        height:13em;
-        margin-top: 1em;
+        flex-basis: 100%;
+        height:13rem;
+        margin: 1rem;
+    }
+    .activities-section
+    {
+        padding: 1rem;
     }
     .activities-container
     {
@@ -370,20 +424,28 @@ i.fa-star.not-activated
         justify-content: space-between;
         align-items: center;*/
         width: 100%;
-        max-width: 100%;
     }
     .activities a img
     {
-        max-height: 66%;
-    } 
-    .activities.single
+        max-height: 70%;
+    }
+
+    .activities.activities.port , .activities.calanque, .activities.frioul, .activities.garde, .activities.longchamp, .activities.pomegue
     {
-        height: 11em;
+        height: 12rem;
+        flex-basis: 100%;
         width: 100%;
         max-width: 100%;
-        margin-top: 2em;
+        margin-top: 1rem;
     }
-    .activities.double
+    .activities-texte
+    {
+        display: flex;
+        height: 100%;
+        align-items: center;
+
+    }
+    /*.activities.double
     {
         height: 22em;
         max-width: 100%;
@@ -393,7 +455,7 @@ i.fa-star.not-activated
         max-height: 50%;
         max-width: 100%;
         
-    }
+    }*/
     footer
     {
         padding:2em;
