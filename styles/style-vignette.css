@@ -338,6 +338,7 @@ i.fa-star.not-activated
     {
         height: 70%;
     }
+}
 @media screen and (max-width: 1200px )
 {
     .accommodation
@@ -377,7 +378,7 @@ i.fa-star.not-activated
     }
 }
 /*RESPONSIVE - SMARTPHONE */
-@media screen and  (max-width: 660px )
+@media screen and  (max-width: 660px)
 {   
     .popular-vignette-container
     {
@@ -407,7 +408,6 @@ i.fa-star.not-activated
         padding: 1rem;
 
     }
-    
     .vignette-acc
     {
         flex-basis: 100%;
