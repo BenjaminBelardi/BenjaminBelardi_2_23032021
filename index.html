@@ -3,16 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- internet explorer compatibility mode not activated-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile viewport initial scale and width-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/style-vignette.css">
-    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">-->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">-->
-    <!--<script src="https://kit.fontawesome.com/7d732b568c.js" crossorigin="anonymous"></script>-->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Reservia</title>
 </head>
 
@@ -29,15 +27,15 @@
             </ul>
             <div class='button-registration'>
                 <button class='registration'>S'inscrire</button>
-            </div> 
+            </div>
         </nav>
-        
+
     </header>
     <!--div page scaling-->
     <div id="page">
         <!--filter and shearch section-->
-        <h1>Trouvez votre hebergement pour des vacances de rêve</h1>
-        <h2>En plein centre ou en pleine nature</h2>
+        <h1 id="main-title">Trouvez votre hebergement pour des vacances de rêve</h1>
+        <h2 id="sub-title">En plein centre ou en pleine nature</h2>
         <div class="search">
             <span class="search-map-icon">
                 <i class="fa fa-map-marker-alt"></i>
@@ -198,15 +196,12 @@
                             </div>
                         </a>
                     </div>
-                    <!--<div class="vignette-more">
-                        <h2>Afficher plus</h2>
-                    </div>-->
                 </div>
                 <h2 class="vignette-more">Afficher plus</h2>
-                <!-- popular vignette-->
             </div>
+            <!-- popular vignette-->
             <div class="popular-vignette-container">
-                <h1 id="popular-title" >Les plus Populaires
+                <h1 id="popular-title">Les plus Populaires
                     <a href="#" title="popular-page">
                         <i class="fa fa-chart-line"></i>
                     </a>
@@ -271,33 +266,30 @@
             <div class="activities-container">
                 <div class="activities port">
                     <a href="#" title="vieux port">
-                        <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                            alt="vieux port">
+                        <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
                         <div class="activities-texte">
                             <p class="activities-title">Vieux Port</p>
                         </div>
                     </a>
                 </div>
-                <!--<div class="activities double">-->
-                    <div class="activities pomegue">
-                        <a href="#" title="Fort de Pomègues">
-                            <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                                alt="Fort de Pomègues">
-                            <div class="activities-texte">
-                                <p class="activities-title">Fort de Pomègues</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="activities frioul">
-                        <a href="#" title="Îles du Frioul">
-                            <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                                alt="Îles du Frioul">
-                            <div class="activities-texte">
-                                <p class="activities-title">Îles du Frioul</p>
-                            </div>
-                        </a>
-                    </div>
-                <!--</div>-->
+                <div class="activities pomegue">
+                    <a href="#" title="Fort de Pomègues">
+                        <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                            alt="Fort de Pomègues">
+                        <div class="activities-texte">
+                            <p class="activities-title">Fort de Pomègues</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="activities frioul">
+                    <a href="#" title="Îles du Frioul">
+                        <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                            alt="Îles du Frioul">
+                        <div class="activities-texte">
+                            <p class="activities-title">Îles du Frioul</p>
+                        </div>
+                    </a>
+                </div>
                 <div class="activities calanque">
                     <a href="#" title="Parc National des Calanques">
                         <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
@@ -307,49 +299,44 @@
                         </div>
                     </a>
                 </div>
-                <!--<div class="activities double">-->
-                    <div class="activities longchamp">
-                        <a href="#" title="Parc Longchamp">
-                            <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                                alt="Parc Longchamp">
-                            <div class="activities-texte">
-                                <p class="activities-title">Parc Longchamp</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="activities garde">
-                        <a href="#" title="Notre Dame de la Garde">
-                            <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                                alt="Notre Dame de la Garde">
-                            <div class="activities-texte">
-                                <p class="activities-title">Notre-Dame-de-la-Garde</p>
-                            </div>
-                        </a>
-                    </div>
-                    
-                <!--</div>-->
+                <div class="activities longchamp">
+                    <a href="#" title="Parc Longchamp">
+                        <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                        <div class="activities-texte">
+                            <p class="activities-title">Parc Longchamp</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="activities garde">
+                    <a href="#" title="Notre Dame de la Garde">
+                        <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                            alt="Notre Dame de la Garde">
+                        <div class="activities-texte">
+                            <p class="activities-title">Notre-Dame-de-la-Garde</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
     </div>
-        <footer id="more">
-            <!--3 text block-->
-                <div class="more-info">
-                    <h1>A propos</h1>
-                    <a href="#more" title="Fonctionnement du site">Fonctionnement du site</a>
-                    <a href="#more" title="Conditions générale de vente">Conditions générales de vente</a>
-                    <a href="#more" title="Données de confidentialité">Données de confidentialité</a>
-                </div>
-                <div class="more-info">
-                    <h1>Nos hébergements</h1>
-                    <a href="#more" title="Charte qualité">Charte qualité</a>
-                    <a href="#more" title="Soumettre votre hôtel">Soumettre votre hôtel</a>
-                </div>
-                <div class="more-info">
-                    <h1>Assistance</h1>
-                    <a href="#more" title="Centre d'aide">Centre d'aide</a>
-                    <a href="#more" title="Nous contacter">Nous contacter</a>
-                </div>
-        </footer>
+    <footer id="more">
+        <div class="more-info">
+            <h1>A propos</h1>
+            <a href="#more" title="Fonctionnement du site">Fonctionnement du site</a>
+            <a href="#more" title="Conditions générale de vente">Conditions générales de vente</a>
+            <a href="#more" title="Données de confidentialité">Données de confidentialité</a>
+        </div>
+        <div class="more-info">
+            <h1>Nos hébergements</h1>
+            <a href="#more" title="Charte qualité">Charte qualité</a>
+            <a href="#more" title="Soumettre votre hôtel">Soumettre votre hôtel</a>
+        </div>
+        <div class="more-info">
+            <h1>Assistance</h1>
+            <a href="#more" title="Centre d'aide">Centre d'aide</a>
+            <a href="#more" title="Nous contacter">Nous contacter</a>
+        </div>
+    </footer>
 </body>
 
 </html>
