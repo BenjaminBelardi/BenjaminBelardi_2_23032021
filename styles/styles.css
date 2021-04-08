@@ -190,10 +190,9 @@ nav a:hover
 }
 
 /* checkbox filter masked with icon */
-input[name="type-hebergement"] 
+input[type="checkbox"]
 {
-    position: absolute;
-    left: -9999px;
+    display:none;
 }
 
 .filter-option 
