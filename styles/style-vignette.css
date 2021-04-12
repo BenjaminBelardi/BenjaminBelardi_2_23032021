@@ -18,6 +18,10 @@
     justify-content: space-between;
     margin: -20px;
 }
+#accomodation-title
+{
+    margin-top: 1rem;
+}
 .vignette-acc
 {
     display: flex;
@@ -58,7 +62,7 @@
 .vignette-title
 {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 900;
 }
 .vignette-price
 {
@@ -97,12 +101,13 @@
     max-width: 30%;
     background-color: #f2f2f2;
     border-radius: 2rem;
-    padding: 2em 2em 0 2em;
+    padding: 2rem 2rem 2rem 2rem;
 }
-.popular-vignette-container h1
+.popular-vignette-container>h1
 {
     display: inline-flex;
     justify-content: space-between;
+    margin-top: 1rem;
     margin-bottom: -1rem;
 }
 .popular-vignette-container h1 i.fa
@@ -114,7 +119,8 @@
     background-color: white;
     border-radius: 1.5rem;
     box-shadow: 0 0 16px #dedede;
-    max-height: 140px;
+    height: 145px;
+    max-height: 145px;
     width: 100%;
     max-width: 100%;
     margin-top: 2.2rem;
@@ -125,13 +131,14 @@
 {
     display: flex;
     text-decoration: none;
+    height: 100%;
 }
 .vignette-popular a img
 {
     display: flex;
     width: 40%;
     max-width: 40%;
-    max-height: 134px;
+    height: 100%;
     object-fit:cover;
     border-top-left-radius: 1.3rem;
     border-bottom-left-radius: 1.3rem;
@@ -144,6 +151,7 @@
     justify-content: space-between;
     color: black;
     margin-left: 1rem;
+    margin-right: 0.5rem;
 }
 .vignette-popular .star-icon i.fa
 {
@@ -244,7 +252,6 @@ i.fa-star.not-activated
 .activities-texte .activities-title
 {
     display: flex;
-    /*height: 100%;*/
     align-items: center;
     margin-left: 1rem;
     color: black;

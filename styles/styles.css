@@ -9,13 +9,13 @@ body
 {
     margin: 0;
 }
-#page
+.page
 {
     margin:auto;
     max-width: 1440px;
     padding: 0 40px;
 }
-#page h1
+.page h1
 {
     margin-top: 0;
 }
@@ -218,14 +218,14 @@ input[name="type-hebergement"]:checked + label.filter-option
 }
 .filter-option-label
 {
-    font-weight: 600;
+    font-weight: 900;
     padding: 0 15px 0 15px;
 }
 .filter-info
 {
     display: flex;
     align-items: center;
-    margin:  1em 0 1.5em 0;
+    margin:  2rem 0 1.5rem 0;
 }
 
 /* icon info round decoration */
@@ -280,7 +280,7 @@ footer
 
 @media screen and (max-width: 660px )
 {
-    #page
+    .page
     {
         padding: 170px 0 0;
     }
