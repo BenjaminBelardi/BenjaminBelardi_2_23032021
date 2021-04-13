@@ -204,15 +204,15 @@ i.fa-star.not-activated
 }
 .activities.garde
 {
-    height: 200px;
+    height: 210px;
 }
 .activities.frioul
 {
-    height: 165px; 
+    height: 170px; 
 }
 .activities.longchamp
 {
-    height:210px;
+    height:200px;
 }
 .activities a
 {
@@ -235,15 +235,15 @@ i.fa-star.not-activated
 }
 .activities.pomegue a img
 {
-    height: 80%;
+    height: 75%;
 }
 .activities.garde a img
 {
-    height: 75%;
+    height: 72%;
 }
 .activities.longchamp a img
 {
-    height: 72%;
+    height: 71%;
 }
 .activities.port a img, .activities.calanque a img
 {
