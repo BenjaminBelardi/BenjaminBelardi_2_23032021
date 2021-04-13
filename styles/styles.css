@@ -9,7 +9,7 @@ body
 {
     margin: 0;
 }
-.page
+.page, .footer
 {
     margin:auto;
     max-width: 1440px;
@@ -255,11 +255,15 @@ input[name="type-hebergement"]:checked + label.filter-option
 footer
 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around;
     background-color:#f2f2f2;
     margin-top:2rem;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
 }
 .more-info
 {
@@ -297,7 +301,6 @@ footer
         position: absolute;
         right:20px;
         top: 0;
-
     }
    header
    {
@@ -360,11 +363,12 @@ footer
     {
         display: none;
     }
-    #more
+    .footer
     {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+        padding: 0;
     }
     .filter, .filter-info
     {
